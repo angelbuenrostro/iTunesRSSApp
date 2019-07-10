@@ -53,7 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */,
+				A20B2B1D22D64DE0002FB5D7 /* Models */,
 				A20B2B1822D64D35002FB5D7 /* ViewControllers */,
+				A20B2B1E22D64DF2002FB5D7 /* Networking */,
 				A20B2B0D22D64CE3002FB5D7 /* Assets.xcassets */,
 				A20B2B0F22D64CE3002FB5D7 /* LaunchScreen.storyboard */,
 				A20B2B1222D64CE3002FB5D7 /* Info.plist */,
@@ -67,6 +69,20 @@
 				A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A20B2B1D22D64DE0002FB5D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A20B2B1E22D64DF2002FB5D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
