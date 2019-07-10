@@ -15,6 +15,7 @@
 		A20B2B2222D64EF9002FB5D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2122D64EF9002FB5D7 /* Result.swift */; };
 		A20B2B2422D64F38002FB5D7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */; };
 		A20B2B2722D654BF002FB5D7 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2622D654BF002FB5D7 /* MediaTableViewCell.swift */; };
+		A20B2B2A22D657A4002FB5D7 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A20B2B2122D64EF9002FB5D7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		A20B2B2622D654BF002FB5D7 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */,
+				A20B2B2822D65787002FB5D7 /* Helpers */,
 				A20B2B1D22D64DE0002FB5D7 /* Models */,
 				A20B2B1822D64D35002FB5D7 /* ViewControllers */,
 				A20B2B2522D65490002FB5D7 /* Views */,
@@ -103,6 +106,14 @@
 				A20B2B2622D654BF002FB5D7 /* MediaTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A20B2B2822D65787002FB5D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				A20B2B2022D64EEB002FB5D7 /* Feed.swift in Sources */,
 				A20B2B2222D64EF9002FB5D7 /* Result.swift in Sources */,
 				A20B2B2722D654BF002FB5D7 /* MediaTableViewCell.swift in Sources */,
+				A20B2B2A22D657A4002FB5D7 /* UIView+Layout.swift in Sources */,
 				A20B2B0722D64CE2002FB5D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
