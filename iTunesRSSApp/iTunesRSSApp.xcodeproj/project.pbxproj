@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A20B2B0722D64CE2002FB5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */; };
-		A20B2B0922D64CE2002FB5D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B0822D64CE2002FB5D7 /* ViewController.swift */; };
-		A20B2B0C22D64CE2002FB5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B0A22D64CE2002FB5D7 /* Main.storyboard */; };
 		A20B2B0E22D64CE3002FB5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B0D22D64CE3002FB5D7 /* Assets.xcassets */; };
 		A20B2B1122D64CE3002FB5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B0F22D64CE3002FB5D7 /* LaunchScreen.storyboard */; };
+		A20B2B1C22D64D8D002FB5D7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A20B2B0322D64CE2002FB5D7 /* iTunesRSSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesRSSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A20B2B0822D64CE2002FB5D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A20B2B0B22D64CE2002FB5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A20B2B0D22D64CE3002FB5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20B2B1022D64CE3002FB5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20B2B1222D64CE3002FB5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +53,20 @@
 			isa = PBXGroup;
 			children = (
 				A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */,
-				A20B2B0822D64CE2002FB5D7 /* ViewController.swift */,
-				A20B2B0A22D64CE2002FB5D7 /* Main.storyboard */,
+				A20B2B1822D64D35002FB5D7 /* ViewControllers */,
 				A20B2B0D22D64CE3002FB5D7 /* Assets.xcassets */,
 				A20B2B0F22D64CE3002FB5D7 /* LaunchScreen.storyboard */,
 				A20B2B1222D64CE3002FB5D7 /* Info.plist */,
 			);
 			path = iTunesRSSApp;
+			sourceTree = "<group>";
+		};
+		A20B2B1822D64D35002FB5D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +129,6 @@
 			files = (
 				A20B2B1122D64CE3002FB5D7 /* LaunchScreen.storyboard in Resources */,
 				A20B2B0E22D64CE3002FB5D7 /* Assets.xcassets in Resources */,
-				A20B2B0C22D64CE2002FB5D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20B2B0922D64CE2002FB5D7 /* ViewController.swift in Sources */,
+				A20B2B1C22D64D8D002FB5D7 /* HomeTableViewController.swift in Sources */,
 				A20B2B0722D64CE2002FB5D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A20B2B0A22D64CE2002FB5D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A20B2B0B22D64CE2002FB5D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A20B2B0F22D64CE3002FB5D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
