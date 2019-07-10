@@ -73,7 +73,6 @@ class MediaTableViewCell: UITableViewCell {
         
         // Adds media image to the background with a blur effect on top
         self.backgroundView = backgroundBlurImage
-        backgroundBlurImage.image = #imageLiteral(resourceName: "testImage")
         backgroundBlurImage.contentMode = .scaleAspectFill
         backgroundBlurImage.clipsToBounds = true
         let blurEffect = UIBlurEffect(style: .light)

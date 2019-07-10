@@ -16,6 +16,7 @@
 		A20B2B2422D64F38002FB5D7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */; };
 		A20B2B2722D654BF002FB5D7 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2622D654BF002FB5D7 /* MediaTableViewCell.swift */; };
 		A20B2B2A22D657A4002FB5D7 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */; };
+		A20B2B2C22D66034002FB5D7 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B2B22D66034002FB5D7 /* CircularStd-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		A20B2B2622D654BF002FB5D7 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
 		A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		A20B2B2B22D66034002FB5D7 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A20B2B0622D64CE2002FB5D7 /* AppDelegate.swift */,
+				A20B2B2E22D6604A002FB5D7 /* Resources */,
 				A20B2B2822D65787002FB5D7 /* Helpers */,
 				A20B2B1D22D64DE0002FB5D7 /* Models */,
 				A20B2B1822D64D35002FB5D7 /* ViewControllers */,
@@ -114,6 +117,14 @@
 				A20B2B2922D657A4002FB5D7 /* UIView+Layout.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A20B2B2E22D6604A002FB5D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20B2B2B22D66034002FB5D7 /* CircularStd-Medium.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			files = (
 				A20B2B1122D64CE3002FB5D7 /* LaunchScreen.storyboard in Resources */,
 				A20B2B0E22D64CE3002FB5D7 /* Assets.xcassets in Resources */,
+				A20B2B2C22D66034002FB5D7 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
