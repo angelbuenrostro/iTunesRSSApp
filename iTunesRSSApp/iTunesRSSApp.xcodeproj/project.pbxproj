@@ -11,6 +11,9 @@
 		A20B2B0E22D64CE3002FB5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B0D22D64CE3002FB5D7 /* Assets.xcassets */; };
 		A20B2B1122D64CE3002FB5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20B2B0F22D64CE3002FB5D7 /* LaunchScreen.storyboard */; };
 		A20B2B1C22D64D8D002FB5D7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */; };
+		A20B2B2022D64EEB002FB5D7 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B1F22D64EEB002FB5D7 /* Feed.swift */; };
+		A20B2B2222D64EF9002FB5D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2122D64EF9002FB5D7 /* Result.swift */; };
+		A20B2B2422D64F38002FB5D7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A20B2B1022D64CE3002FB5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20B2B1222D64CE3002FB5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20B2B1B22D64D8D002FB5D7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		A20B2B1F22D64EEB002FB5D7 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		A20B2B2122D64EF9002FB5D7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 		A20B2B1D22D64DE0002FB5D7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A20B2B1F22D64EEB002FB5D7 /* Feed.swift */,
+				A20B2B2122D64EF9002FB5D7 /* Result.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +89,7 @@
 		A20B2B1E22D64DF2002FB5D7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A20B2B2322D64F38002FB5D7 /* NetworkClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -156,6 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20B2B1C22D64D8D002FB5D7 /* HomeTableViewController.swift in Sources */,
+				A20B2B2422D64F38002FB5D7 /* NetworkClient.swift in Sources */,
+				A20B2B2022D64EEB002FB5D7 /* Feed.swift in Sources */,
+				A20B2B2222D64EF9002FB5D7 /* Result.swift in Sources */,
 				A20B2B0722D64CE2002FB5D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
