@@ -11,7 +11,7 @@ import UIKit
 class MediaTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    
+    var savedImage: UIImage?
     var result: Result? {
         didSet { updateViews() }
     }
@@ -70,7 +70,7 @@ class MediaTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
         
-        
+        self.hero.isEnabled = true
         // Adds media image to the background with a blur effect on top
         self.backgroundView = backgroundBlurImage
         backgroundBlurImage.contentMode = .scaleAspectFill
@@ -136,6 +136,8 @@ class MediaTableViewCell: UITableViewCell {
         mediaImage.constrainWidth(constant: 100)
         mediaImage.centerYInSuperview()
         
+        mediaImage.hero.id = "mediaImage"
+        
         // Add constraints to opaque background
         opaqueBackground.translatesAutoresizingMaskIntoConstraints = false
         opaqueBackground.leadingAnchor.constraint(equalTo: mainLabel.leadingAnchor).isActive = true
@@ -174,6 +176,8 @@ class MediaTableViewCell: UITableViewCell {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {
                         for view in imageViews{
+                            self?.savedImage = image
+                            self?.result!.image = image
                             view.image = image
                         }
                     }

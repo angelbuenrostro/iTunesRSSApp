@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class HomeTableViewController: UITableViewController {
     
@@ -19,16 +20,28 @@ class HomeTableViewController: UITableViewController {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-                print("This is the result \(self.fetchResults[0].kind)")
             }
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        // Add Header
         addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
         navigationItem.title = "iTunes RSS"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Enable Hero Transitions
+        self.hero.isEnabled = true
+        
+//        // Add Header
+//        addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
+//        navigationItem.title = "iTunes RSS"
+//        navigationController?.navigationBar.prefersLargeTitles = true
         
         // Prepare cells for dynamic sizing
         tableView.estimatedRowHeight = 300
@@ -93,8 +106,6 @@ class HomeTableViewController: UITableViewController {
             }
             if let results = results {
                 self.fetchResults = results
-                print(self.fetchResults[0].kind)
-                self.tableView.reloadData()
             }
         }
     }
@@ -130,13 +141,20 @@ class HomeTableViewController: UITableViewController {
         
         let result = fetchResults[indexPath.row]
         resultCell.result = result
-        print("this is the kind: \(result.kind)")
-        //        guard let artURL = URL(string: result.artworkUrl100) else { return cell }
-        //        resultCell.mediaImage.load(url: artURL)
         
-        return cell
+        return resultCell
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tappedResult = fetchResults[indexPath.row]
+        
+        let mediaDetailVC = MediaDetailViewController()
+        mediaDetailVC.hero.isEnabled = true
+        mediaDetailVC.result = tappedResult
+        mediaDetailVC.savedImage = tappedResult.image
+        self.navigationController?.pushViewController(mediaDetailVC, animated: true)
+    }
 
    
 }

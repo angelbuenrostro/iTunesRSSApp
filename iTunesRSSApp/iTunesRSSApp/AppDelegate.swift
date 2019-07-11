@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             let tableVC = HomeTableViewController()
             navigationController = UINavigationController(rootViewController: tableVC)
+            
+            navigationController!.hero.isEnabled = true
+            tableVC.hero.isEnabled = true
             
             window.rootViewController = navigationController
             
