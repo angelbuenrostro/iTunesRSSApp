@@ -26,6 +26,7 @@ class MediaDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationItem.titleView = nil
         self.hero.isEnabled = true
         mediaImage.hero.id = "mediaImage"
         
@@ -52,5 +53,6 @@ class MediaDetailViewController: UIViewController {
         mediaImage.image = self.savedImage
         mediaImage.contentMode = .scaleAspectFill
     }
+    
 
 }

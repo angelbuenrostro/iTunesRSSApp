@@ -18,19 +18,21 @@ class HomeTableViewController: UITableViewController {
     // Contains fetch results and updates the tableview whenever the value is set
     private(set) var fetchResults = [Result]() {
         didSet {
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                if self.navigationItem.titleView != self.control {
+                    self.addControlHeader(size: self.view.frame.width - self.view.frame.midX)
+                }
             }
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        // Add Header
-        addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
-        navigationItem.title = "iTunes RSS"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        navigationController?.navigationItem.titleView?.setNeedsDisplay()
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +40,10 @@ class HomeTableViewController: UITableViewController {
         // Enable Hero Transitions
         self.hero.isEnabled = true
         
-//        // Add Header
-//        addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
-//        navigationItem.title = "iTunes RSS"
-//        navigationController?.navigationBar.prefersLargeTitles = true
+        // Add Header
+        addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
+        navigationItem.title = "iTunes RSS"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         // Prepare cells for dynamic sizing
         tableView.estimatedRowHeight = 300
