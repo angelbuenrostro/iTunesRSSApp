@@ -42,8 +42,6 @@ class HomeTableViewController: UITableViewController {
         
         // Add Header
         addControlHeader(size: CGFloat(view.frame.width - view.frame.midX))
-        navigationItem.title = "iTunes RSS"
-        navigationController?.navigationBar.prefersLargeTitles = true
         
         // Prepare cells for dynamic sizing
         tableView.estimatedRowHeight = 300
