@@ -145,6 +145,7 @@ class MediaTableViewCell: UITableViewCell {
         opaqueBackground.trailingAnchor.constraint(equalTo: mainLabel.trailingAnchor).isActive = true
         opaqueBackground.bottomAnchor.constraint(equalTo: kindLabel.bottomAnchor).isActive = true
         
+        opaqueBackground.hero.id = "opaqueBackground"
     }
     
     func updateViews(){
