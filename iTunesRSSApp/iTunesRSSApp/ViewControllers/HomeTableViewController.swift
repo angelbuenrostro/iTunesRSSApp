@@ -154,8 +154,8 @@ class HomeTableViewController: UITableViewController {
         mediaDetailVC.result = tappedResult
         mediaDetailVC.savedImage = tappedResult.image
         
-        hero.replaceViewController(with: mediaDetailVC)
-//        self.navigationController?.pushViewController(mediaDetailVC, animated: true)
+//        hero.replaceViewController(with: mediaDetailVC)
+        self.navigationController?.pushViewController(mediaDetailVC, animated: true)
     }
 
    
